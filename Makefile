@@ -1,14 +1,20 @@
 CXX = g++
 
+CXXFLAGS = -O2 -std=c++17
+
 SRC = $(wildcard src/*.cpp)
 INC = -Iinclude
+LTBB = -ltbb
 
 OBJ = $(SRC:%.cpp=%.o)
 
 all: scan
 
 scan: $(OBJ)
-	$(CXX) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(INC) $(LTBB)
 
 %.o: %.cpp
-	$(CXX) -o $@ $< $(INC)
+	$(CXX) $(CXXFLAGS) -c $< -o $@ $(INC)
+
+clean:
+	rm -f scan $(OBJ)
