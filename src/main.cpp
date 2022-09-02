@@ -1,3 +1,9 @@
+/*
+ * FILE: main.cpp
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 #include <iostream>
 #include <chrono>
 

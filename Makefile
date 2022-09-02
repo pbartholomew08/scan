@@ -1,3 +1,7 @@
+# FILE: Makefile
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
 CXX = g++
 
 CXXFLAGS = -O2 -std=c++17

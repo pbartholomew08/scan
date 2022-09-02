@@ -1,3 +1,9 @@
+/*
+ * FILE: implementations.h
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 #ifndef __IMPL_H_
 #define __IMPL_H_
 
